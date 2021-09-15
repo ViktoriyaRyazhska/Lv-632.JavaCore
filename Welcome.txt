@@ -2,3 +2,6 @@ Firstname Lastname BranchName
 Vlad Tykhanskiy Sovile
 Lytvynova Maryna MarynaLytvynova
 Oleksandr Havriush OleksandrHavriush
+
+
+Andrii Maik AndriiMaik
