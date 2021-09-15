@@ -1,4 +1,10 @@
+Denys Shlemko shd
 Firstname Lastname BranchName
+Taras Bek TarasBek
 Vlad Tykhanskiy Sovile
 Lytvynova Maryna MarynaLytvynova
 Andriy kobyliatskiy Andriy
+Igor Ilnytsyi IgorIlnytskyi
+Oleksandr Havriush OleksandrHavriush
+Andrii Maik AndriiMaik
+
