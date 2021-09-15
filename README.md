@@ -1,5 +1,5 @@
-###JavaCore
-#Lab1
+### JavaCore
+# Lab1
 Install JDK and Eclipse.​
 
 Create Java project.​
