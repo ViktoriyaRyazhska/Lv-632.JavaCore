@@ -1,4 +1,9 @@
 Firstname Lastname BranchName
+Taras Bek TarasBek
 Vlad Tykhanskiy Sovile
 Lytvynova Maryna MarynaLytvynova
+
 Igor Ilnytsyi IgorIlnytskyi
+
+Oleksandr Havriush OleksandrHavriush
+
