@@ -4,9 +4,6 @@ import java.io.InputStreamReader;
 
 public class Task3 {
 
-    int c1;
-
-
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
