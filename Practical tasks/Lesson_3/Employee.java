@@ -17,7 +17,7 @@ public class Employee {
         this.name=name;
         this.rate=rate;
         this.hours=hours;
-        Employee.totalSum+=getSalary()+getBonues();
+        Employee.totalSum+=getSalary();
     }
     @Override public String toString() {
         return "Person: " + name + "; Hours: " + hours + "; Rate: " + rate + "; Salary: " + getSalary()+"; Bonues: "+getBonues();
@@ -28,7 +28,7 @@ public class Employee {
         }
 
         public int getSalary() {
-            return hours * rate;
+            return hours * rate + getBonues();
         }
 
         public void changeRate(int rate){
@@ -36,7 +36,7 @@ public class Employee {
         }
 
         public int getBonues (){
-        return (int) (getSalary()*0.1);
+        return (int) (hours * rate *0.1);
         }
 
         public int getTotalSum(){
