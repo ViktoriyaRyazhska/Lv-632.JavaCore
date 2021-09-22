@@ -9,9 +9,9 @@ public class CW3App {
         Employee emploee3 = new Employee("Max",5, 7);
         emploee1.getSalary();
         emploee1.changeRate(8);
-        System.out.println(emploee1.toString());
-        System.out.println(emploee2.toString());
-        System.out.println(emploee3.toString());
-        System.out.println("All salary: " + (emploee1.getSum() + emploee2.getSum() + emploee3.getSum()));
+        System.out.println(emploee1 + "sallary " + emploee1.getSum());
+        System.out.println(emploee2 + "sallary " + emploee2.getSum());
+        System.out.println(emploee3 + "sallary " + emploee3.getSum());
+        System.out.println("Total sum: " + Employee.getTotalSum());
     }
 }

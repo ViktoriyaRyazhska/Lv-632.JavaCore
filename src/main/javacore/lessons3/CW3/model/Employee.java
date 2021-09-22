@@ -4,7 +4,7 @@ public class Employee {
     private String fName;
     private int rate;
     private int hours;
-    private static double sum;
+    private static double sum = 0;
 
     public int getSalary(){
         return rate * hours;
@@ -57,8 +57,14 @@ public class Employee {
         this.hours = hours;
     }
 
+
     public double getSum() {
-        return sum = getSalary() + getBones();
+        sum += getSalary() + getBones();
+        return getSalary() + getBones();
+    }
+
+    public static  double getTotalSum(){
+        return sum;
     }
 
     @Override
