@@ -50,6 +50,10 @@ class Employee {
 		return name + "   [rate: " + rate + "]" + ",  " + "[hours: " + hours + "]";
 	}
 
+	public void changeRate(int rate) {
+		this.rate = rate;
+	}
+
 	public int getSalary() {
 		totalSum += rate * hours;
 		return (rate * hours);

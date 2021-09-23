@@ -9,6 +9,7 @@ public class Appl {
 
 		Employee e2 = new Employee("Stepan Fox", 8);
 		e2.setHours(171);
+		e2.setRate(7);
 
 		Employee e3 = new Employee("Viktor Sun", 5, 117);
 
