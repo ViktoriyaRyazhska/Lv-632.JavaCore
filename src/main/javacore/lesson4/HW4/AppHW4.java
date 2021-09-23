@@ -6,9 +6,41 @@ import lesson4.HW4.model.Dog;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
 public class AppHW4 {
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
+        readHTTPError();
+        gerInformationDog();
+    }
+
+    enum httpError {BadRequst, Unauthorized, PaymentRequired, Forbidden, NotFound}
+
+    public static void readHTTPError() {
+        switch (Integer.parseInt(scanner.nextLine())) {
+            case 400:
+                System.out.println(httpError.BadRequst);
+                break;
+            case 401:
+                System.out.println(httpError.Unauthorized);
+                break;
+            case 402:
+                System.out.println(httpError.PaymentRequired);
+                break;
+            case 403:
+                System.out.println(httpError.Forbidden);
+                break;
+            case 404:
+                System.out.println(httpError.NotFound);
+                break;
+            default:
+                System.out.println("Not ");
+        }
+    }
+
+    public static void gerInformationDog() {
         Dog dog = new Dog("Sultan", Breed.STAFARD, 7);
         Dog dog1 = new Dog("Cezar", Breed.LABRADOR, 3);
         Dog dog2 = new Dog("Sultan", Breed.MOBS, 5);
