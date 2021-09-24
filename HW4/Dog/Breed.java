@@ -1,0 +1,5 @@
+
+public enum Breed {
+	DOBERMAN, GERMAN_SHEPHED, LABRADOR, CANE_CORSO;
+
+}
