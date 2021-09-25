@@ -32,12 +32,12 @@ public class Person {
 		scanner.close();
 	}
 	
-    public Person(String firstName, String lastName) {
-    	this.firstName = firstName;
-    	this.lastName = lastName;
+        public Person(String firstName, String lastName) {
+    	        this.firstName = firstName;
+    	        this.lastName = lastName;
 	}
     
-    public Person() {
+        public Person() {
 		birthYear = LocalDate.now().getYear();
 	}
 
