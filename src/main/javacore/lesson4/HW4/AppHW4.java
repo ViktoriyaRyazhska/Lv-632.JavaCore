@@ -12,9 +12,22 @@ public class AppHW4 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        getNumbers();
-        readHTTPError();
-        gerInformationDog();
+        checkNumberOfRange();
+//        getNumbers();
+//        readHTTPError();
+//        gerInformationDog();
+    }
+
+    public static void checkNumberOfRange(){
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter float number: ");
+            Float num = scanner.nextFloat();
+            if (num >= -5 && num <= 5) {
+                System.out.println("The number: " + num + " is in the range");
+            } else {
+                System.out.println("The number: " + num + " is not in the range");
+            }
+        }
     }
 
     public static void getNumbers(){
