@@ -3,11 +3,12 @@ package lesson3.HW3;
 import lesson3.HW3.model.Person;
 import lesson3.HW3.utils.OperationPerson;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class HW3App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         OperationPerson operationPerson = new OperationPerson();
         System.out.println("Hello! ");
         List<Person> personList = new ArrayList<Person>();
