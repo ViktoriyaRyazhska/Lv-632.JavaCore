@@ -1,4 +1,4 @@
-package lessons3.CW3.model;
+package lesson3.CW3.model;
 
 public class Employee {
     private String fName;

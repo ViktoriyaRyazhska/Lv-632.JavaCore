@@ -1,4 +1,4 @@
-package lessons3.HW3.model;
+package lesson3.HW3.model;
 
 public class Person {
     private String firstName;

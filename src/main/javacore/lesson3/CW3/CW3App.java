@@ -1,6 +1,6 @@
-package lessons3.CW3;
+package lesson3.CW3;
 
-import lessons3.CW3.model.Employee;
+import lesson3.CW3.model.Employee;
 
 public class CW3App {
     public static void main(String[] args) {

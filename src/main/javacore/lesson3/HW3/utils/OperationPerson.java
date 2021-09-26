@@ -1,6 +1,6 @@
-package lessons3.HW3.utils;
+package lesson3.HW3.utils;
 
-import lessons3.HW3.model.Person;
+import lesson3.HW3.model.Person;
 
 import java.time.LocalDate;
 import java.util.Scanner;

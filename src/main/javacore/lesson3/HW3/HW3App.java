@@ -1,7 +1,7 @@
-package lessons3.HW3;
+package lesson3.HW3;
 
-import lessons3.HW3.model.Person;
-import lessons3.HW3.utils.OperationPerson;
+import lesson3.HW3.model.Person;
+import lesson3.HW3.utils.OperationPerson;
 
 import java.util.ArrayList;
 import java.util.List;
