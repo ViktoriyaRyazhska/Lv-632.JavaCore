@@ -13,9 +13,9 @@ public class AppHW4 {
 
     public static void main(String[] args) {
         checkNumberOfRange();
-//        getNumbers();
-//        readHTTPError();
-//        gerInformationDog();
+        getNumbers();
+        readHTTPError();
+        gerInformationDog();
     }
 
     public static void checkNumberOfRange(){
