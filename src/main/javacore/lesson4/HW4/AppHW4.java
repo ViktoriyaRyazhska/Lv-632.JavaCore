@@ -12,8 +12,24 @@ public class AppHW4 {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        getNumbers();
         readHTTPError();
         gerInformationDog();
+    }
+
+    public static void getNumbers(){
+        System.out.println("Enter quality");
+        gemMaxMinNumbers(scanner.nextInt());
+    }
+
+    public static void gemMaxMinNumbers(int k){
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < k; i++) {
+            System.out.println( "Enter of the number: " );
+            list.add(scanner.nextInt());
+        }
+        System.out.println("Min: " + list.stream().min(Integer::compareTo));
+        System.out.println("Max: " + list.stream().max(Integer::compareTo));
     }
 
     enum httpError {BadRequst, Unauthorized, PaymentRequired, Forbidden, NotFound}
