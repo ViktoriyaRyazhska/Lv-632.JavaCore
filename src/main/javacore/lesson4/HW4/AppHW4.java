@@ -2,6 +2,7 @@ package lesson4.HW4;
 
 import lesson4.HW4.model.Breed;
 import lesson4.HW4.model.Dog;
+import lesson4.HW4.model.HttpError;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -45,24 +46,23 @@ public class AppHW4 {
         System.out.println("Max: " + list.stream().max(Integer::compareTo));
     }
 
-    enum httpError {BadRequst, Unauthorized, PaymentRequired, Forbidden, NotFound}
-
     public static void readHTTPError() {
+        System.out.println("Enter number http error: ");
         switch (Integer.parseInt(scanner.nextLine())) {
             case 400:
-                System.out.println(httpError.BadRequst);
+                System.out.println(HttpError.BadRequst.getValue());
                 break;
             case 401:
-                System.out.println(httpError.Unauthorized);
+                System.out.println(HttpError.Unauthorized.getValue());
                 break;
             case 402:
-                System.out.println(httpError.PaymentRequired);
+                System.out.println(HttpError.PaymentRequired.getValue());
                 break;
             case 403:
-                System.out.println(httpError.Forbidden);
+                System.out.println(HttpError.Forbidden.getValue());
                 break;
             case 404:
-                System.out.println(httpError.NotFound);
+                System.out.println(HttpError.NotFound.getValue());
                 break;
             default:
                 System.out.println("Not ");
