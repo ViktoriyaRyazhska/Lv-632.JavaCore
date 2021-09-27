@@ -1,4 +1,4 @@
-package classhometask;
+package lesson1.classhometask;
 
 public class FlowerBedCalculation {
     final static double PI = Math.PI;

@@ -1,4 +1,4 @@
-package classhometask;
+package lesson1.classhometask;
 
 import java.io.BufferedReader;
 import java.io.IOException;

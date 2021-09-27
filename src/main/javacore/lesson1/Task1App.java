@@ -1,5 +1,7 @@
-import classhometask.*;
-import utils.Reader;
+package lesson1;
+
+import lesson1.classhometask.*;
+
 
 import java.text.DecimalFormat;
 
