@@ -13,8 +13,8 @@ public class OperationPerson {
         return LocalDate.now().getYear() - person.getbYear();
     }
 
-    public String input() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public String input(BufferedReader reader) throws IOException {
+        reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter the year of birth: ");
         String str = reader.readLine();
         return str;
