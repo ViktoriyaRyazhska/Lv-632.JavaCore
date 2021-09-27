@@ -36,7 +36,7 @@ public class HW5App {
     public static void NumberOfMonth_Ver2(int[] dayMonth, BufferedReader reader) throws IOException {
         int x = Integer.parseInt(reader.readLine());
         if (x < 13 || x > 0) {
-            System.out.println(dayMonth[Integer.parseInt(reader.readLine()) - 1]);
+            System.out.println(dayMonth[x - 1]);
         } else {
             throw new ArrayIndexOutOfBoundsException("Not found month!");
         }
