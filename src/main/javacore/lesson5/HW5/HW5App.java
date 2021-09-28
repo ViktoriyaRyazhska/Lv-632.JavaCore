@@ -10,6 +10,7 @@ public class HW5App {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         NumberOfMonth(dayMonth, reader);
         NumberOfMonth_Ver2(dayMonth, reader);
+        calculateSumOfElements();
 
     }
 
@@ -65,4 +66,30 @@ public class HW5App {
         }
     }
 
+    public static void calculateSumOfElements() {
+        int[] arr = {10, 5, 5, -2, 5, 5, -5, 5, 10, 5};
+        int sumFirst = 0;
+        int sumLast = 1;
+        int count = 0;
+        int num = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                count++;
+                if (count <= 5) {
+                    sumFirst += arr[i];
+                }
+            }
+        }
+        for (int j = arr.length - 1; j >= 0 ; j--) {
+            if (arr[j] > 0) {
+                num++;
+                if (num <= 5){
+                    sumLast *= arr[j];
+                }
+            }
+        }
+
+        System.out.println(sumFirst);
+        System.out.println(sumLast);
+    }
 }
