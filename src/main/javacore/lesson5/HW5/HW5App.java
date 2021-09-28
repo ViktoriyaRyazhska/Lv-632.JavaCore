@@ -1,8 +1,13 @@
 package lesson5.HW5;
 
+import lesson5.HW5.model.Car;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class HW5App {
     public static void main(String[] args) throws IOException {
@@ -12,6 +17,20 @@ public class HW5App {
         NumberOfMonth_Ver2(dayMonth, reader);
         calculateSumOfElements();
 
+        List<Car> cars = new ArrayList<>();
+        cars.add( new Car("Mers",2007,2.2));
+        cars.add( new Car("Opel",2003,1.6));
+        cars.add( new Car("BMW",2007,3.3));
+        cars.add( new Car("Tesla",2019,2.0));
+
+        System.out.println("Enter year car: ");
+        int yearCar = Integer.parseInt(reader.readLine());
+        cars.sort(Comparator.comparing(Car::getYear));
+         for (Car car : cars){
+             if (yearCar == car.getYear()) {
+                 System.out.println(car.toString());
+             }
+         }
     }
 
     public static void NumberOfMonth(int[] dayMonth, BufferedReader reader) throws IOException {
