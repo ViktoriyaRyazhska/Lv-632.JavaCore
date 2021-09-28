@@ -14,18 +14,43 @@ public class HW5App {
     }
 
     public static void NumberOfMonth(int[] dayMonth, BufferedReader reader) throws IOException {
-        switch (Integer.parseInt(reader.readLine())) {
+        int x = Integer.parseInt(reader.readLine());
+        switch (x) {
             case 1:
-                System.out.println(dayMonth[0]);
+                System.out.println(dayMonth[x - 1]);
                 break;
             case 2:
-                System.out.println(dayMonth[1]);
+                System.out.println(dayMonth[x - 1]);
                 break;
             case 3:
-                System.out.println(dayMonth[2]);
+                System.out.println(dayMonth[x - 1]);
                 break;
             case 4:
-                System.out.println(dayMonth[3]);
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 5:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 6:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 7:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 8:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 9:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 10:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 11:
+                System.out.println(dayMonth[x - 1]);
+                break;
+            case 12:
+                System.out.println(dayMonth[x - 1]);
                 break;
 
             default:
@@ -37,8 +62,6 @@ public class HW5App {
         int x = Integer.parseInt(reader.readLine());
         if (x < 13 || x > 0) {
             System.out.println(dayMonth[Integer.parseInt(reader.readLine()) - 1]);
-        } else {
-            throw new ArrayIndexOutOfBoundsException("Not found month!");
         }
     }
 
