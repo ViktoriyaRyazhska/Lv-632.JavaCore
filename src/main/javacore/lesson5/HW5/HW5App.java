@@ -1,5 +1,6 @@
 package lesson5.HW5;
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import lesson5.HW5.model.Car;
 
 import java.io.BufferedReader;
@@ -16,6 +17,8 @@ public class HW5App {
         NumberOfMonth(dayMonth, reader);
         NumberOfMonth_Ver2(dayMonth, reader);
         calculateSumOfElements();
+        findPosition();
+        enteringNotNegativNumbers(reader);
 
         List<Car> cars = new ArrayList<>();
         cars.add( new Car("Mers",2007,2.2));
@@ -99,10 +102,10 @@ public class HW5App {
                 }
             }
         }
-        for (int j = arr.length - 1; j >= 0 ; j--) {
+        for (int j = arr.length - 1; j >= 0; j--) {
             if (arr[j] > 0) {
                 num++;
-                if (num <= 5){
+                if (num <= 5) {
                     sumLast *= arr[j];
                 }
             }
@@ -110,5 +113,36 @@ public class HW5App {
 
         System.out.println(sumFirst);
         System.out.println(sumLast);
+    }
+
+    public static void findPosition() {
+        int[] arr = {-2, 3, -2, -4, 7};
+        int countP = 0;
+        int result = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                countP++;
+                System.out.println("CountP: " + countP);
+                if (countP == 2) {
+                    result = arr[i];
+                }
+            }
+        }
+        System.out.println("Result: " + result);
+    }
+
+    public static void enteringNotNegativNumbers(BufferedReader reader) throws IOException {
+        long result = 1;
+        while (true) {
+            System.out.println("Entering integers until the first negative number: ");
+            int x = Integer.parseInt(reader.readLine());
+            if (x > 0) {
+                result *= x;
+                continue;
+            } else {
+                break;
+            }
+        }
+        System.out.println("Result: " + result);
     }
 }
