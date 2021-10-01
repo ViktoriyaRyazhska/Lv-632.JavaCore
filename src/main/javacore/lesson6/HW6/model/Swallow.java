@@ -15,4 +15,19 @@ public class Swallow extends FlyingBird{
     public void setYear(int year) {
         this.year = year;
     }
+
+    @Override
+    public String toString() {
+        return "Swallow{" +
+                "name='" + super.getName() + '\'' +
+                ", feathers='" + super.getFeathers() + '\'' +
+                ", layEggs='" + super.getLayEggs() + '\'' +
+                ", year=" + getYear() +
+                '}';
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Fly bird! = " + this);
+    }
 }

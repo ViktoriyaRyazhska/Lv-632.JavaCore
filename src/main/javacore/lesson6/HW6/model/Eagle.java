@@ -19,16 +19,18 @@ public class Eagle extends FlyingBird {
     @Override
     public String toString() {
         return "Eagle{" +
-                "feathers='" + super.getFeathers() + '\'' +
-                ", layEggs='" + super.getLayEggs() + '\'' +
-                ", name='" + super.getName() + '\'' +
-                ", color='" + color + '\'' +
+                "feathers='" + getFeathers() + '\'' +
+                ", layEggs='" + getLayEggs() + '\'' +
+                ", name='" + getName() + '\'' +
+                ", color='" + getColor() + '\'' +
                 '}';
     }
 
     @Override
     public void fly() {
-        super.fly();
-        System.out.println(getColor());
+        System.out.println("Fly bird " + getName() + " "
+                + getFeathers() + " "
+                + getLayEggs() + " "
+                + getColor());
     }
 }
