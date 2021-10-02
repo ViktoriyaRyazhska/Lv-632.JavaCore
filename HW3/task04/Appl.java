@@ -1,18 +1,17 @@
 package lesson003f;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Appl {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws Exception {
 
 		ArrayList<String> persons = new ArrayList<String>();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n;
-		int count = 1;
+		int countP = 1;
 
 		System.out.print("How many people enter data: ");
 		n = Integer.parseInt(br.readLine());
@@ -25,10 +24,10 @@ public class Appl {
 			p.setLastName(br.readLine());
 			System.out.println("3. Input Year of birth:  ");
 			p.setBirthYear(Integer.parseInt(br.readLine()));
-			persons.add((count++) + ". " + p.toString() + "\n");
+			persons.add((countP++) + ". " + p.toString() + "\n");
 		}
 
-		// remove left and right bracket
+//      remove left and right bracket
 		System.out.println("List of persons: ");
 		for (String list : persons)
 			System.out.print(list);

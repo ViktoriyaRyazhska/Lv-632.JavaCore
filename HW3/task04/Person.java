@@ -1,5 +1,6 @@
 package lesson003f;
 
+import java.io.BufferedReader;
 import java.time.LocalDate;
 
 public class Person {
@@ -47,11 +48,18 @@ public class Person {
 	public void changLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
+	public void InputFirstName(BufferedReader br) throws Exception {
+		System.out.println("Enter firstName: ");
+		this.firstName = br.readLine();
+	}
 
+	public void InputLastName(BufferedReader br) throws Exception {
+		System.out.println("Enter lastName: ");
+		this.lastName = br.readLine();
+	}
+	
 	public int getAge() {
-		LocalDate date = LocalDate.now();
-		int thisYear = date.getYear();
-		int age = thisYear - getBirthYear();
-		return age;
+		return LocalDate.now().getYear() - getBirthYear();
 	}
 }
