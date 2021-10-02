@@ -1,6 +1,5 @@
 package lesson5.HW5;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import lesson5.HW5.model.Car;
 
 import java.io.BufferedReader;
@@ -14,26 +13,26 @@ public class HW5App {
     public static void main(String[] args) throws IOException {
         int[] dayMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        NumberOfMonth(dayMonth, reader);
-//        NumberOfMonth_Ver2(dayMonth, reader);
-//        calculateSumOfElements();
-//        findPosition();
+        NumberOfMonth(dayMonth, reader);
+        NumberOfMonth_Ver2(dayMonth, reader);
+        calculateSumOfElements();
+        findPosition();
         enteringNotNegativNumbers(reader);
 
-//        List<Car> cars = new ArrayList<>();
-//        cars.add( new Car("Mers",2007,2.2));
-//        cars.add( new Car("Opel",2003,1.6));
-//        cars.add( new Car("BMW",2007,3.3));
-//        cars.add( new Car("Tesla",2019,2.0));
-//
-//        System.out.println("Enter year car: ");
-//        int yearCar = Integer.parseInt(reader.readLine());
-//        cars.sort(Comparator.comparing(Car::getYear));
-//         for (Car car : cars){
-//             if (yearCar == car.getYear()) {
-//                 System.out.println(car.toString());
-//             }
-//         }
+        List<Car> cars = new ArrayList<>();
+        cars.add( new Car("Mers",2007,2.2));
+        cars.add( new Car("Opel",2003,1.6));
+        cars.add( new Car("BMW",2007,3.3));
+        cars.add( new Car("Tesla",2019,2.0));
+
+        System.out.println("Enter year car: ");
+        int yearCar = Integer.parseInt(reader.readLine());
+        cars.sort(Comparator.comparing(Car::getYear));
+         for (Car car : cars){
+             if (yearCar == car.getYear()) {
+                 System.out.println(car.toString());
+             }
+         }
     }
 
     public static void NumberOfMonth(int[] dayMonth, BufferedReader reader) throws IOException {

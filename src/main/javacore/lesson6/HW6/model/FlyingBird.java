@@ -39,7 +39,7 @@ public class FlyingBird extends Bird{
     @Override
     public String toString() {
         return "FlyingBird{" +
-                "name='" + name + '\'' +
+                "name='" + getName() + '\'' +
                 '}';
     }
 
