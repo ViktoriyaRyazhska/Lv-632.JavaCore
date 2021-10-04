@@ -31,7 +31,7 @@ public class Task01 {
 //		The biggest numbers => VARIANT 2		
 		int max1 = randomNumbers[0];
 		int index = 0;
-		int countN = 1;
+		int countN;
 		for (int i = 1; i < randomNumbers.length; i++) {
 			if (max1 < randomNumbers[i]) {
 				max1 = randomNumbers[i];
@@ -45,7 +45,7 @@ public class Task01 {
 
 
 		
-//		The sum of positive numbers in the array => VARIANT 1
+//		The sum of positive and count numbers in the array => VARIANT 1
 		int sumPositive = IntStream.of(randomNumbers).filter(i -> i > 0).sum();
 		int countPositive = (int) IntStream.of(randomNumbers).filter(i -> i > 0).count();
 		int sumNegative = IntStream.of(randomNumbers).filter(i -> i < 0).sum();
@@ -53,7 +53,7 @@ public class Task01 {
 		System.out.println("\nCoutn Positive: " + countPositive + " Total sum: " + sumPositive);
 		System.out.println("Coutn Negative: " + countNegative + " Total sum: " + sumNegative);
 
-//		The sum of positive numbers in the array => VARIANT 2
+//		The sum of and count positive numbers in the array => VARIANT 2
 		int countPos = 0;
 		int sumP = 0;
 		int countNeg = 0;
@@ -83,4 +83,5 @@ public class Task01 {
 			System.out.println("Negative numbers - more: " + countNeg);
 		}
 	}
+	
 }
