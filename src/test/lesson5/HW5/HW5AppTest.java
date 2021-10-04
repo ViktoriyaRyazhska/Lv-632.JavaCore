@@ -38,8 +38,8 @@ class HW5AppTest {
     @Test
     void shouldTwoPositivNumber() {
         int[] arr = {2, -3, 4, 8, 12};
-        String expected = hw5.findPosition(arr);
-        String actual = "Result: 4";
+        int expected = hw5.findPosition(arr);
+        int actual = 4;
         assertEquals(expected, actual);
     }
 

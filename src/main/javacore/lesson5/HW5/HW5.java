@@ -53,8 +53,11 @@ public class HW5 {
     public Integer NumberOfMonth_Ver2(int[] dayMonth, BufferedReader reader) throws IOException {
         int x = Integer.parseInt(reader.readLine());
         int result = 0;
-        if (x < 13 || x > 0) {
+        if (x < 13 && x > 0) {
             result = dayMonth[x - 1];
+        } else {
+            System.out.println("The entered number of the month is not correct!," +
+                    " Possible only in the range from 1 to 12");
         }
         return result;
     }
@@ -86,7 +89,7 @@ public class HW5 {
         return sumFirst + sumLast;
     }
 
-    public String findPosition(int[] arr) {
+    public int findPosition(int[] arr) {
         int countP = 0;
         int result = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -97,7 +100,7 @@ public class HW5 {
                 }
             }
         }
-        return "Result: " + result;
+        return result;
     }
 
     public Integer enteringNotNegativNumbers(BufferedReader reader) throws IOException {
@@ -109,7 +112,6 @@ public class HW5 {
                 if ((x % 2) == 0) {
                     result *= x;
                 }
-                continue;
             } else {
                 break;
             }
