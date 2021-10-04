@@ -11,13 +11,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class HW5AppTest {
     HW5 hw5 = new HW5();
     int[] dayMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+//    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-//    @Mock BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    @Mock BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     @Test
     void numberOfMonth() throws IOException{
-//        when(reader.readLine()).thenReturn(1);
+        when(reader.readLine()).thenReturn(1);
         int expected = hw5.NumberOfMonth(dayMonth,reader);
         int actual = 31;
         assertEquals(expected, actual);
