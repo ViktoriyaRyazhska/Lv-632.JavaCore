@@ -62,7 +62,10 @@ public class Dog {
 		return Objects.equals(name, other.name);
 	}
 
-	public static Dog searchSameName(Dog n, Dog o, Dog p) {
+	public static Dog searchSameName(Dog n, Dog o, Dog p, Dog q) {
+		if (n.getName().equals(o.getName()) && n.getName().equals(p.getName()) && n.getName().equals(q.getName())) {
+			return n;
+		}
 		if (n.getName().equals(o.getName()) && n.getName().equals(p.getName())) {
 			return n;
 		}
@@ -72,8 +75,20 @@ public class Dog {
 		if (n.getName().equals(p.getName())) {
 			return n;
 		}
+		if (n.getName().equals(q.getName())) {
+			return n;
+		}
+		if (o.getName().equals(p.getName()) && o.getName().equals(q.getName())) {
+			return o;
+		}
 		if (o.getName().equals(p.getName())) {
 			return o;
+		}
+		if (o.getName().equals(q.getName())) {
+			return o;
+		}
+		if (p.getName().equals(q.getName())) {
+			return q;
 		}
 		return null;
 	}
