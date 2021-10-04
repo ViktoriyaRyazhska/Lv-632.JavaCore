@@ -13,8 +13,11 @@ class HW5AppTest {
     int[] dayMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+//    @Mock BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
     @Test
     void numberOfMonth() throws IOException{
+//        when(reader.readLine()).thenReturn(1);
         int expected = hw5.NumberOfMonth(dayMonth,reader);
         int actual = 31;
         assertEquals(expected, actual);
