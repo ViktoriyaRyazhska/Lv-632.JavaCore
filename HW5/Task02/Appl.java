@@ -63,25 +63,28 @@ public class Appl {
 //			Complex method of sorting an array
 			System.out.print("\nSort any field - complex method [for example - from 1 to "
 					+ (empl01.getColumnCount() - 1) + " ]: ");
-			int fieldN = Integer.parseInt(br.readLine());
+			restart: while (true) {
+				int fieldN = Integer.parseInt(br.readLine());
 
-			if ((fieldN < 1) || (fieldN > (empl01.getColumnCount() - 1))) {
-				System.out.print("Try again: ");
-				br.readLine();
-			} else {
-				
-				if (fieldN == 1) {
-					Arrays.sort(empls, Comparator.comparing(Employee::getName));
-					System.out.println(Arrays.toString(empls));
+				if ((fieldN < 1) || (fieldN > (empl01.getColumnCount() - 1))) {
+					System.out.print("Try again: ");
+					continue restart;
+				} else {
+
+					if (fieldN == 1) {
+						Arrays.sort(empls, Comparator.comparing(Employee::getName));
+						System.out.println(Arrays.toString(empls));
+					}
+					if (fieldN == 2) {
+						Arrays.sort(empls, Comparator.comparing(Employee::getDepNumber));
+						System.out.println(Arrays.toString(empls));
+					}
+					if (fieldN == 3) {
+						Arrays.sort(empls, Comparator.comparing(Employee::getSalary));
+						System.out.println(Arrays.toString(empls));
+					}
 				}
-				if (fieldN == 2) {
-					Arrays.sort(empls, Comparator.comparing(Employee::getDepNumber));
-					System.out.println(Arrays.toString(empls));
-				}
-				if (fieldN == 3) {
-					Arrays.sort(empls, Comparator.comparing(Employee::getSalary));
-					System.out.println(Arrays.toString(empls));
-				}
+				break restart;
 			}
 		}
 	}
