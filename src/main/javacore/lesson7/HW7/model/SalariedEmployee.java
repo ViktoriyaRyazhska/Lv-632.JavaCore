@@ -1,6 +1,6 @@
 package lesson7.HW7.model;
 
-public class SalariedEmployee extends Employee implements Payment{
+public class SalariedEmployee extends Employee {
     private double hourlyRate;
     private double numberOfHoursWorked;
     private String socialSecurityNumber;

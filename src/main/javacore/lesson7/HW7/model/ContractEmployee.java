@@ -1,6 +1,6 @@
 package lesson7.HW7.model;
 
-public class ContractEmployee extends Employee implements Payment{
+public class ContractEmployee extends Employee {
     private int federalTaxIdmember;
     private  double fixedMonthlyPayment;
 

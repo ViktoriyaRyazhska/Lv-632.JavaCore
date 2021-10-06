@@ -1,6 +1,6 @@
 package lesson7.HW7.model;
 
-public class Employee {
+public abstract class Employee implements Payment{
     private int id;
     private String name;
     private String employeeld;
