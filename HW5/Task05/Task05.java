@@ -32,17 +32,22 @@ public class Task05 {
 			
 			int pos2 = mas[0];
 			int countP = 0;
-			int countL = 1;
+			int countL = 0;
 			int positP = 0;
-			for (int i = 0; i < mas.length; i++) {
-				if (mas[i] > 0) {
-					countP++;
-					if (countP == 2) {
-						pos2 = mas[i];
-						positP = i;
-					}
-				} else if (pos2 == mas[i])
-					countL++;
+			if (countA > 1) {
+				for (int i = 0; i < mas.length; i++) {
+					if (mas[i] > 0) {
+						countP++;
+						if (countP == 2) {
+							pos2 = mas[i];
+							positP = i;
+							countL = 1;
+						}
+					} else if (pos2 == mas[i])
+						countL++;
+				}
+			} else {
+				System.out.print("\n=====Positive numbers are missing!===== ");
 			}
 //----------------------------------------------------			
 			
