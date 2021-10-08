@@ -30,6 +30,6 @@ public class Helicopter extends FlyingVehicle {
 
     @Override
     public void land() {
-        System.out.println("Helicopter is landing |Weight: "+getWeight()+" |Max height: "+getMaxHeight()+" |Passengers: "+getPassengers());
+        System.out.println("Helicopter is landing");
     }
 }

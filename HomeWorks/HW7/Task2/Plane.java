@@ -21,6 +21,6 @@ public class Plane extends FlyingVehicle {
 
     @Override
     public void land() {
-        System.out.println("Plane is landing |Max distance: "+getMaxDistance()+" |Passengers: "+getPassengers());
+        System.out.println("Plane is landing");
     }
 }

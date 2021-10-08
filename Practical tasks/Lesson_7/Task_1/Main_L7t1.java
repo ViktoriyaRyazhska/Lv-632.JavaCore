@@ -1,4 +1,4 @@
-package Task_1;
+package Task1;
 
 public class Main_L7t1 {
     public static void main(String[] args) {
