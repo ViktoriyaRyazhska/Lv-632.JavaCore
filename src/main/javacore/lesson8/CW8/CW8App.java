@@ -1,8 +1,6 @@
 package lesson8.CW8;
 
-import lesson8.CW8.model.Car;
-import lesson8.CW8.model.Square;
-import lesson8.CW8.model.Wrapper;
+import lesson8.CW8.model.*;
 
 import java.time.LocalDate;
 
@@ -17,8 +15,7 @@ public class CW8App {
                 .build();
         System.out.println(car);
 
-
-        Wrapper<Square> as = new Wrapper<>();
-
+        Wrapper<Figura> sq = new Wrapper<>(new Square());
+        Wrapper<Figura> cir = new Wrapper<>(new Circle());
     }
 }

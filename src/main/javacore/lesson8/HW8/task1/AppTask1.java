@@ -11,13 +11,15 @@ public class AppTask1 {
         fullName1.setLastName("Sh");
 
         Student student1 = new Student(new FullName("Den","Sh"), 38, 102);
+        Student student3 = new Student(new FullName("Bony","Cl"), 25, 111);
         Student student2 = new Student(fullName1, 35, 101);
 
         List<Student> students = new ArrayList<>();
+        students.add(student3);
         students.add(student1);
         students.add(student2);
 
-        students.sort(Comparator.comparing(Student::getCourse));
+        students.sort(Comparator.comparing(Person::getFullName));
         students.forEach(student -> System.out.println(student.info() + ", " + student.activity()));
     }
 }

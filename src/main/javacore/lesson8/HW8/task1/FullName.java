@@ -1,6 +1,6 @@
 package lesson8.HW8.task1;
 
-public class FullName {
+public class FullName implements Comparable{
    private String firstName;
    private String lastName;
 
@@ -26,5 +26,10 @@ public class FullName {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return (this.getFirstName().compareTo(((FullName) o).getFirstName()));
     }
 }
