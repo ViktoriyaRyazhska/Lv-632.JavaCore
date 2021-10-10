@@ -21,23 +21,21 @@ public class Person {
 		this.lastName = ln;
 	}
 	
-	public void input() {
-		Scanner scanner = new Scanner(System.in);
+	public void input(Scanner scanner) {
 		System.out.println("Enter the first name");
 		firstName = scanner.next();
 		System.out.println("Enter the last name");
 		lastName = scanner.next();
 		System.out.println("Enter the year of birth");
 		birthYear = scanner.nextInt();
-		scanner.close();
 	}
 	
-        public Person(String firstName, String lastName) {
-    	        this.firstName = firstName;
-    	        this.lastName = lastName;
+    public Person(String firstName, String lastName) {
+    	this.firstName = firstName;
+    	this.lastName = lastName;
 	}
     
-        public Person() {
+    public Person() {
 		birthYear = LocalDate.now().getYear();
 	}
 

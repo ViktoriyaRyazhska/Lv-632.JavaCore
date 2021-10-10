@@ -1,5 +1,7 @@
 package lesson3.hw;
 
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
 		Person pers1 = new Person("Leo", "Messi");
@@ -17,7 +19,9 @@ public class Main {
 		Person pers4 = new Person();
 		
 		Person pers5 = new Person();
-		pers5.input();
+		Scanner scanner = new Scanner(System.in);
+		pers5.input(scanner);
+		scanner.close();
 		
 		pers1.output();
 	}
