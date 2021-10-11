@@ -30,8 +30,6 @@ public class Car {
     }
     /**    */
     public class CarBuilder {
-        public CarBuilder() {
-        }
 
         public CarBuilder addModel(String model) {
             Car.this.model = model;
@@ -68,4 +66,3 @@ public class Car {
         }
     }
 }
-
