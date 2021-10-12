@@ -22,3 +22,5 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 .idea/
+Lv-632.JavaCore.iml
+bin/META-INF/Lv-632.JavaCore.kotlin_module
