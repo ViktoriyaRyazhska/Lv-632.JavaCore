@@ -7,8 +7,17 @@ import java.util.*;
 
 public class AppHW9Task2 {
     public static void main(String[] args) throws IOException {
-        Map<String, String> personMap = new HashMap<>();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        Map<String, String> personMap = new HashMap<>();
+
+        getPersonMap(personMap);
+
+        getDuplicates(personMap);
+
+        removePersonByName(personMap, bufferedReader);
+    }
+
+    private static Map getPersonMap(Map<String, String> personMap) {
         personMap.put("Sh", "Den");
         personMap.put("Shl", "Max");
         personMap.put("Shd", "Andry");
@@ -17,15 +26,13 @@ public class AppHW9Task2 {
         personMap.put("Shn", "Alex");
         personMap.put("Shh", "Nata");
         personMap.put("Shq", "Mark");
-        personMap.put("Shlm", "Makar");
+        personMap.put("Shlm", "Mark");
         personMap.put("Shy", "Viktory");
         System.out.println(personMap.entrySet());
-        /**  */
-        for (Map.Entry<String, String> entry : personMap.entrySet()) {
-            System.out.println(entry.getValue());
+        return personMap;
+    }
 
-            }
-        /** */
+    private static void removePersonByName(Map<String, String> personMap, BufferedReader bufferedReader) throws IOException {
         System.out.println("Enter first name: ");
         String name = bufferedReader.readLine();
         Iterator<String> iterator = personMap.values().iterator();
@@ -35,9 +42,23 @@ public class AppHW9Task2 {
                     iterator.remove();
                 }
             }
-        } else{
+        } else {
             System.out.println("NOt found 'Name'!");
         }
         System.out.println(personMap.entrySet());
+    }
+
+    private static void getDuplicates(Map<String, String> personMap) {
+        TreeSet<String> persons = new TreeSet<>();
+        persons.addAll(personMap.values());
+        Set<String> duplicates = new HashSet<>();
+        Set<String> tracking = new HashSet<>();
+        for (String person : persons) {
+            if (!tracking.add(person)) {
+                duplicates.add(person);
+                System.out.println("Person: " + person);
+            }
+        }
+        duplicates.forEach(x -> System.out.println("Duplicates: " + x));
     }
 }

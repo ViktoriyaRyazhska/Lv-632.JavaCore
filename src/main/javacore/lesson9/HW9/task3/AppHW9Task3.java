@@ -25,11 +25,6 @@ public class AppHW9Task3 {
         students.add(student4);
         students.add(student5);
 
-        Iterator<Student> studentIterator = students.iterator();
-        while (studentIterator.hasNext()) {
-
-        }
-
         students.sort(Comparator.comparing(Student::getCourse));
         students.forEach(x ->
                 System.out.println("Student name: " + x.getFistName() +
@@ -37,6 +32,7 @@ public class AppHW9Task3 {
 
         System.out.println("Enter course: ");
         int course = Integer.valueOf(bufferedReader.readLine());
+
         printStudentsOfCourse(students, course);
     }
 

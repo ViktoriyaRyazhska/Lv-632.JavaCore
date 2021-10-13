@@ -5,7 +5,6 @@ import java.util.TreeSet;
 
 public class App9Task1 {
     public static void main(String[] args) {
-        Set<Integer> integers = new TreeSet<>();
         Set s1 = new TreeSet();
         Set s2 = new TreeSet();
         s1.add(1);
