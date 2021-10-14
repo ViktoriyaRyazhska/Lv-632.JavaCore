@@ -6,5 +6,5 @@ public class AppCW10Task1 {
         String str = "IT Academy";
         Boolean res = name.equals(str.substring(0, 2));
         System.out.println(res);
-    }
+      }
 }

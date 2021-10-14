@@ -31,7 +31,7 @@ public class AppCW10task2 {
     }
 
     public static boolean checkWithRegExpString(String userNameString) {
-        Pattern p = Pattern.compile("Shlemko Denys Shhhhh");
+        Pattern p = Pattern.compile("^[a-zA-Z\\s]{3,}$");
         Matcher m = p.matcher(userNameString);
         return m.matches();
     }
