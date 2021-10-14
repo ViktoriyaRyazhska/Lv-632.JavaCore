@@ -3,7 +3,7 @@ package lesson9.HW9.task1;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class App9Task1 {
+public class AppHW9Task1 {
     public static void main(String[] args) {
         Set s1 = new TreeSet();
         Set s2 = new TreeSet();
