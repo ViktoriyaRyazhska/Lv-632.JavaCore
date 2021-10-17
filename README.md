@@ -5,7 +5,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 --|--|--|--|--|--|--|--|--|--|--|--|--|--
 1|Valentyn|||||||||||||
 2|oleksandrhavryush|+||||||||||||
-3|Telepun|+|+|+|+|+||||||||
+3|Telepun|+|+|+|+|+|+|||||||
 4|Hawk6567|+|+|+|+|+|+|+|+|||||
 5|OksanaVorona|+||||||||||||
 6|AndriyKobyliatskyi|+|+|+|+|+|+|+|+|||||
