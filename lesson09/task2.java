@@ -1,4 +1,4 @@
-package lesson9;
+package lesson09;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class task2 {
 
 	public static void main(String[] args) {
-
 		Map<Integer, String> employeeMap = new HashMap<Integer, String>();
 		employeeMap.put(1, "Oleg");
 		employeeMap.put(2, "Viktor");
@@ -28,17 +27,14 @@ public class task2 {
 		Scanner scan2 = new Scanner(System.in);
 		String name = scan2.nextLine();
 		findByName(name, employeeMap);
-
 	}
 
-	
 	public static void findById(int Id, Map<Integer, String> map) {
 		if (map.containsKey(Id)) {
 			System.out.printf("%s has id %d.\n", map.get(Id), Id);
 		} else
 			System.out.println("Incorrect id");
 	}
-
 	public static void findByName(String name, Map<Integer, String> map) {
 		if (map.containsValue(name)) {
 			for (Entry<Integer, String> entry : map.entrySet()) {

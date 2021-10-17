@@ -1,4 +1,4 @@
-package lesson9;
+package lesson09;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,14 +23,12 @@ public class classes {
 		myCollection.add(27);
 
 		List<Integer> newCollection = new ArrayList<>();
-		System.out.print("index numbers of myCollection more then 5 : ");
 		for (int a = 0; a < myCollection.size(); a++) {
 			if (myCollection.get(a) > 5) {
-				System.out.print(a + "\s");
 				newCollection.add(a);
 			}
 		}
-
+		
 		Iterator<Integer> i = myCollection.iterator();
 		while (i.hasNext()) {
 			Integer n = i.next();
@@ -38,7 +36,7 @@ public class classes {
 				i.remove();
 			}
 		}
-		System.out.println("\nnewCollection: " + newCollection);
+		System.out.println("newCollection: " + newCollection);
 		System.out.println("myCollection: " + myCollection);
 
 		System.out.println("---------------------------");
