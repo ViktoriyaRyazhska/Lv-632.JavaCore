@@ -19,7 +19,6 @@ public class Cleaner extends Staff {
 
     @Override
     void print() {
-        super.print();
         System.out.println(TYPE_PERSON+ ". My name is "+ getName());
     }
 }
