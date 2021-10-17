@@ -1,8 +1,6 @@
 package Task3;
 
-import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 
 public class Student {
@@ -32,15 +30,11 @@ public class Student {
     }
 
     public static void printStudents (List<Student> students, Integer course){      //Print students by course
-        List<Student> currentCourse = new ArrayList<>();
-        Iterator<Student> iterator = students.iterator();
-        while (iterator.hasNext()){
-            Student student = iterator.next();
-            if(student.getCourse() == course){
-             currentCourse.add(student);
+        for (Student student : students){
+            if(course.equals(student.getCourse())){
+                System.out.println(student);
             }
         }
-        System.out.println(currentCourse);
     }
 
     private static Comparator<Student> compareByName (List<Student> list){      //Comparator for Name
