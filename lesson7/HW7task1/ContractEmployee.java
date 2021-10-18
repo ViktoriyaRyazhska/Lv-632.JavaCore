@@ -6,14 +6,14 @@ int salary;
 
 
 	public ContractEmployee(String employeeId, String federalTaxIdmember, int salary) {
-		super(employeeId, salary);
+		super(employeeId);
 		this.salary=salary;
 		this.federalTaxIdmember=federalTaxIdmember;
 	}
 
 	@Override
-	public void calculatePay() {
-		System.out.println(employeeId+", social number "+federalTaxIdmember+", salary "+salary);
+	public int calculatePay() {
+		return salary;
 	}
 
 	public int getSalary() {

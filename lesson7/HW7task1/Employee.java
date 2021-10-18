@@ -4,28 +4,17 @@ public class Employee implements Payment {
 	
 	String employeeId;
 	public int salary;
-	public Employee(String employeeId, int salary) {
+	public Employee(String employeeId) {
 		this.employeeId=employeeId;
 	}
 
 	@Override
-	public void calculatePay() {
-		
-		
-	}
-
-	public int getSalary() {
+	public int calculatePay() {
 		return salary;
+		
 	}
 
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
-
-//	@Override
-//	public int compareTo(Employee o) {
-//		int result=this.salary.copmareTo(o.salary);
-//		return result;
+	
 	
 
 	
