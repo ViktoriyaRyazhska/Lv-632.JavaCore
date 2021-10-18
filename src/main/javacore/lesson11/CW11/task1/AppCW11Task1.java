@@ -24,7 +24,7 @@ public class AppCW11Task1 {
             if (num > 0) {
                 result = num;
             } else if (num == 0){
-
+                System.out.println(" Divine on  0!");
             } else {
                 throw new IllegalArgumentException("number < 0!");
             }
