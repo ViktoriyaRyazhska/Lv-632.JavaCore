@@ -19,11 +19,13 @@ public class AppCW10task2 {
 
         if (checkWithRegExpString(name)) {
             String[] words = name.split(" ");
-            System.out.println(words[0] + " " +
-                    words[1].substring(0, 1) + "." +
-                    words[2].substring(0, 1) + ".");
-            System.out.println(words[1]);
-            System.out.println(words[1] + " " + words[2] + " " + words[0]);
+            if (words.length > 2) {
+                System.out.println(words[0] + " " +
+                        words[1].substring(0, 1) + "." +
+                        words[2].substring(0, 1) + ".");
+                System.out.println(words[1]);
+                System.out.println(words[1] + " " + words[2] + " " + words[0]);
+            }
 
         } else {
             System.out.println("The string contains numbers or symbols");

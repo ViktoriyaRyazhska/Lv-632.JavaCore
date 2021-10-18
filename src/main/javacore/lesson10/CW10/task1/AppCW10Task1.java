@@ -4,7 +4,6 @@ public class AppCW10Task1 {
     public static void main(String[] args) {
         String name = "IT";
         String str = "IT Academy";
-        Boolean res = name.equals(str.substring(0, 2));
-        System.out.println(res);
+        System.out.println(str.contains(name));
       }
 }
