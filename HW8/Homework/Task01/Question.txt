@@ -1,0 +1,14 @@
+У цій задачі я використав внутрішній клас.
+Тоиму під час компіляції викидає помилку:
+No enclosing instance is accessible. Must qualify the allocation with an enclosing instance of type
+
+Найлегший спосіб позбутися помилки - оголисити цей внутрішній клас як static.
+
+Порадьте, будь-ласка, як можна ще реалізувати подолання помилки.
+Можна наприклад винести цей клас в окремий файл.
+Якщо ж треба дописувати код - скажіть де і що саме треба змінювати.
+
+Намагався знайти варіанти розвязання проблеми тут:
+https://www.yawintutor.com/no-enclosing-instance-of-type-is-accessible-must-qualify-the-allocation/
+
+Дякую!
