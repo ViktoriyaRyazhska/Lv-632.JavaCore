@@ -14,24 +14,24 @@ public class task1 {
 			System.out.println("Wrong count of words");
 		} else {
 			String temp = null;
-			for (int i = 0; i < Sent.length - 1; i++) {
-				for (int j = i + 1; j < Sent.length; j++) {
-					if (Sent[i].length() > Sent[j].length()) {
+			int max=0;
+			for (int i = 0; i < Sent.length; i++) {
+					if (Sent[i].length() > max){
+						max=Sent[i].length();
 						temp = Sent[i];
-					} else {
-						temp = Sent[j];
-					}
+					} 
 				}
+			System.out.println("The longest word is " + temp + ", number of its letters: " + temp.length());
 			}
 
-			System.out.println("The longest word is " + temp + ", number of its letters: " + temp.length());
-		}
+			
+		
 
 		String rev = new StringBuilder(Sent[1]).reverse().toString();
 		System.out.println(rev);
-		for (int i = Sent[1].length() - 1; i >= 0; i--) {
-			System.out.print(Sent[1].charAt(i));
-		}
+//		for (int i = Sent[1].length() - 1; i >= 0; i--) {
+//			System.out.print(Sent[1].charAt(i));
+//		}
 
 	}
 }
