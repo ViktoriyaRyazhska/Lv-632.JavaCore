@@ -7,8 +7,12 @@ import java.io.InputStreamReader;
 public class AppCW11Task1 {
     public static void main(String[] args) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        int result = squareRectangle(shouldReturnNumber(bufferedReader), shouldReturnNumber(bufferedReader));
-        System.out.println(result);
+        try {
+            int result = squareRectangle(shouldReturnNumber(bufferedReader), shouldReturnNumber(bufferedReader));
+            System.out.println(result);
+        } catch (IllegalArgumentException e){
+            System.out.println("Number < 0!");
+        }
     }
 
     private static int squareRectangle(int a, int b) {
