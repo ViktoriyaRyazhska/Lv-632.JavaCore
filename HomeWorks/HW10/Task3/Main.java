@@ -11,16 +11,16 @@ public class Main {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String[] currencies = new String[4];
+        int count = 0;
         System.out.println("input four occurrences of US currency in format: $**.**");
-        for (String currency: currencies){
-            currency = reader.readLine();
-            System.out.println(Main.validation(currency));
+        while (count<4){
+            System.out.println(Main.validation(reader.readLine()));
+            count++;
         }
 
     }
     private static boolean validation (String currency){
-        Pattern p = Pattern.compile("\\$[\\d]+\\.[\\d]{2}");
+        Pattern p = Pattern.compile("\\$[\\d]+\\.[\\d]{1,2}");
         Matcher m = p.matcher(currency);
         return m.matches();
     }
