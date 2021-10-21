@@ -11,7 +11,7 @@ public class AppCW11Task1 {
             int result = squareRectangle(shouldReturnNumber(bufferedReader), shouldReturnNumber(bufferedReader));
             System.out.println(result);
         } catch (IllegalArgumentException e){
-            System.out.println("Number < 0!");
+            System.out.println("Negativ number!");
         }
     }
 
@@ -23,17 +23,23 @@ public class AppCW11Task1 {
         System.out.println("Enter number: ");
         int result = 0;
         int num = 0;
+        String str = "";
         try {
-            num = Integer.parseInt(reader.readLine());
-            if (num > 0) {
-                result = num;
-            } else if (num == 0){
-                System.out.println(" Divine on  0!");
-            } else {
-                throw new IllegalArgumentException("number < 0!");
-            }
+            str = reader.readLine();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+        if (str.matches("^-?[0-9]+$")) {
+                num = Integer.parseInt(str);
+                if (num > 0) {
+                    result = num;
+                } else if (num == 0) {
+                    System.out.println(" Divine on  0!");
+                } else {
+                    throw new IllegalArgumentException("!!!!!");
+                }
+        } else {
+            System.out.println("Is letter!");
         }
         return result;
     }
