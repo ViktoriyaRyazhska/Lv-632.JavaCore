@@ -44,10 +44,10 @@ public class Employee {
 			System.out.print("\nEnter name of employee [for example AAA]: ");
 			String name = br.readLine();
 
-			if (employeeMap.containsValue(name)) {
+			if (employeeMap.containsValue(name.toUpperCase())) {
 				  for (Map.Entry<Integer, String> item : employeeMap.entrySet()) {
 						if (item.getValue().equalsIgnoreCase(name)) {
-							  System.out.printf("ID: %d  Value: %s \n", item.getKey(), name);
+							  System.out.printf("ID: %d  Value: %s \n", item.getKey(), item.getValue());
 						}
 				  }
 			} else {
