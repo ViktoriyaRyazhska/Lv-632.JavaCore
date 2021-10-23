@@ -15,36 +15,27 @@ public class Appl {
 	  public static void main(String[] args) throws NumberFormatException, IOException {
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			Random random = new Random();
+			List<Integer> myCollection = new ArrayList<>();
 			System.out.print("Enter the size of a collection (>5) [for example 20]: ");
 			int rdSize = Integer.parseInt(br.readLine());
-
-			List<Integer> myCollection = Appl.getRandomArray(rdSize);
+			if (rdSize > 5) {
+				  for (int i = 0; i < rdSize; i++) {
+						myCollection.add(random.nextInt(rdSize));
+				  }
+				  System.out.println("My collection: " + myCollection);
+			} else {
+				  System.out.println("Please check that all the data entered is correct!");
+			}
 
 			getElementInArray(myCollection);
-
 			removeElementInArray(myCollection);
-
 			addElementAtPositionInArray(myCollection, 2, 1);
 			addElementAtPositionInArray(myCollection, 10, -3);
 			addElementAtPositionInArray(myCollection, 5, -4);
 			addElementAtPositionInArray(myCollection, 1000, 9999);
-
 			sortCollections(myCollection);
-	  }
-
-	  
-	  public static List<Integer> getRandomArray(int rdSize) {
-			Random random = new Random();
-			List<Integer> rdCollection = new ArrayList<>();
-			if (rdSize > 5) {
-				  for (int i = 0; i < rdSize; i++) {
-						rdCollection.add(random.nextInt(rdSize));
-				  }
-				  System.out.println("My collection: " + rdCollection);
-			} else {
-				  System.out.println("Please check that all the data entered is correct!");
-			}
-			return rdCollection;
+			
 	  }
 
 	  public static void getElementInArray(List<Integer> myCollection) {
