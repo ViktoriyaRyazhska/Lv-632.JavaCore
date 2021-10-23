@@ -8,14 +8,19 @@ import java.util.Comparator;
 import java.util.List;
 
 public class AppHW10Task1 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         getLongestWord(bufferedReader);
     }
     //Привет это какой то текст наверно
-     public static void getLongestWord(BufferedReader reader) throws IOException {
+     public static void getLongestWord(BufferedReader reader){
          System.out.println("Enter the sentence: ");
-         String str = reader.readLine();
+         String str = null;
+         try {
+             str = reader.readLine();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
          List<String> words = Arrays.asList(str.split(" "));
          words.sort(Comparator.comparingInt(String::length).reversed());
          System.out.println("The longest word in the sentence: " + words.get(0).toUpperCase() + " size: " + words.get(0).length());
