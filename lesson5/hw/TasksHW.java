@@ -52,6 +52,7 @@ public class TasksHW {
 				counter++;
 				if (counter == 2) {
 					secondPositiveIndex = i;
+					break;
 				}
 			}
 		}

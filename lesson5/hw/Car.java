@@ -24,10 +24,11 @@ public class Car {
 	}
 	
 	public static void sort (Car [] cars) {
+		Car temp;
 		for (int i = 0; i < cars.length - 1; i++) {
 			for (int j = i + 1; j < cars.length; j++) {
 				if (cars[i].getYear() < cars[j].getYear()) {
-					Car temp = cars[i];
+					temp = cars[i];
 					cars[i] = cars[j];
 					cars[j] = temp;
 				}
