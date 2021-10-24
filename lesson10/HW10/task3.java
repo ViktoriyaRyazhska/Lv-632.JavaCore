@@ -1,21 +1,22 @@
 package lesson10.HW10;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class task3 {
 
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Entre numbres...");
+		System.out.println("Entre sentences...");
 		String text = scan.nextLine();
-		String[] numb = text.split(" ");
-		Double[] number = new Double[numb.length];
-		for (int i = 0; i < numb.length; i++) {
-			number[i] = Double.parseDouble(numb[i]);
-			System.out.printf("$ %.2f\n", number[i]);
-		}
+		Pattern pat = Pattern.compile("\\$(\\d*)(\\.\\d{2})");
+		Matcher match = pat.matcher(text);
 
+		if (match.find()) {
+			System.out.println(match.group());
+		}
 	}
 
 }
