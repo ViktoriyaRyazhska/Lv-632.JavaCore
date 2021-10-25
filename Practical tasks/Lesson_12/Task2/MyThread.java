@@ -9,7 +9,6 @@ public class MyThread extends Thread {
         this.message = message;
         this.intervals = intervals;
     }
-
     @Override
     public void run () {
         try {

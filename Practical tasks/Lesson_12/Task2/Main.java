@@ -2,8 +2,8 @@ package Task2;
 
 public class Main {
     public static void main(String[] args) {
-        MyThread th1 = new MyThread("Hello, world", 2);             //Create new threads
-        MyThread th2 = new MyThread("Peace in the peace", 3);
+        MyThread th1 = new MyThread("Thread 1", 2);             //Create new threads
+        MyThread th2 = new MyThread("Thread 2", 3);
         th1.start();
         th2.start();
 

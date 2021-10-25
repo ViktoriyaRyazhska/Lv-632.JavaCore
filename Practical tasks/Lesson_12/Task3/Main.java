@@ -36,7 +36,7 @@ public class Main {
     private static void symbolsCount(ArrayList<String> list) {      //counting number of symbols each line
         for (String sentence : list) {
             char[] symbols = sentence.toCharArray();
-            System.out.println(symbols.length + " symbols are in Line: " + sentence);
+            System.out.println(symbols.length + " symbols of Line: " + sentence);
         }
     }
 
