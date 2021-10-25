@@ -19,11 +19,19 @@ public class DownloadFile {
 
     public List<String> getWordsOnText(List<String> stringList){
         List<String> newList = new ArrayList<>();
-        String words = String.join(" ",stringList);
-        String[] arr = words.split(" ");
-        for (int i = 0; i < arr.length; i++) {
-            if (getMatchers(arr[i])){
-                newList.add(arr[i].replace("$",""));
+//        String words = String.join(" ",stringList);
+//        String[] arr = words.split(" ");
+//        for (int i = 0; i < arr.length; i++) {
+//            if (getMatchers(arr[i])){
+//                newList.add(arr[i].replace("$",""));
+//            }
+//        }
+        for (int i = 0; i < stringList.size(); i++) {
+            String[] word = stringList.get(i).split(" ");
+            for (int j = 0; j < word.length; j++) {
+                if (getMatchers(word[j])){
+                    newList.add(word[j].replace("$",""));
+                }
             }
         }
         return newList;
