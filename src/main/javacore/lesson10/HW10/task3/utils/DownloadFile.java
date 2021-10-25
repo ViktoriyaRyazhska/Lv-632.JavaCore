@@ -7,6 +7,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class DownloadFile {
@@ -21,17 +23,15 @@ public class DownloadFile {
         String[] arr = words.split(" ");
         for (int i = 0; i < arr.length; i++) {
             if (getMatchers(arr[i])){
-                System.out.println("add: " + arr[i]);
-                newList.add(getFormater(arr[i]));
+                newList.add(arr[i].replace("$",""));
             }
         }
-        newList.forEach(x-> System.out.println("getDollars: " + x));
         return newList;
     }
 
     private Path getPath(String fileName) {
         File file = new File(fileName);
-        if (file.exists() == false) {
+        if (!file.exists()) {
             throw new NullPointerException("File not found!");
         }
         if (file.length() == 0){
@@ -44,12 +44,9 @@ public class DownloadFile {
         }
     }
 
-    private String getFormater(String string) {
-        return String.format("$ %.2f", Double.parseDouble(string));
-    }
-
     private Boolean getMatchers(String string){
-        System.out.println(string.matches("([0-9]+\\.[0-9]+)"));
-        return string.matches("([0-9]+\\.[0-9]+)");
+        Pattern p = Pattern.compile("^\\$[0-9]+(\\,[0-9]{3})?");
+        Matcher m = p.matcher(string);
+        return m.matches();
     }
 }

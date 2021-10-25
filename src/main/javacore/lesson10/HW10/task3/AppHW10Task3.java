@@ -24,9 +24,7 @@ public class AppHW10Task3 {
         }
         if (!finList.isEmpty()){
             List<String> newList = downloadFile.getWordsOnText(finList);
-
             newList.forEach(x-> System.out.println("Course: " + x));
-
         }
     }
 
