@@ -19,7 +19,7 @@ public class AppHW11Task2 {
         }
     }
 
-    public static int readNumber(int start, int end) {
+    public static int readNumber(int start, int end) throws IOException{
         System.out.println("Enter number: ");
         String string = reader.readLine();
         int result = 0;
