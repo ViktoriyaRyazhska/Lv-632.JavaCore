@@ -35,6 +35,7 @@ public class AppHW11Task1 {
         } else {
             throw new IllegalArgumentException("Negative numbers !!! ");
         }
+        /** Result: Infinity !? ,бесконечность при делении на 0*/
         return result;
     }
 
