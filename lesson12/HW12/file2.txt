@@ -1,0 +1,3 @@
+file1.txt has 8 lines
+The longets line has index 4: I think I’m not bad at writing stories. I absolutely adore it! I can spend evenings thinking about the characters and the plot of my stories. I’m also fond of making illustrations to them. In addition, all the process of story making is very enjoyable to me. That’s why I firmly believe that working as a writer is the best variant for me.
+My name Andriy, my birthday date 23.04.1993
