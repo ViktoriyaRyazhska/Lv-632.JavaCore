@@ -13,7 +13,6 @@ public class DownloadFromFile {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
         try {
             String line = null;
             while (true) {
@@ -22,7 +21,6 @@ public class DownloadFromFile {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                System.out.println(line);
                 stringList.add(line);
             }
         } finally {
@@ -38,7 +36,9 @@ public class DownloadFromFile {
     public void saveStringForFile(String outputFileName, List<String> stringList) {
         try (BufferedWriter writter = new BufferedWriter(new FileWriter(outputFileName))) {
             for (String value : stringList) {
-                writter.write(value + "\n");
+                if (value != null) {
+                    writter.write(value + "\n");
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
