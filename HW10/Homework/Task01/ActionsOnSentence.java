@@ -23,13 +23,13 @@ public class ActionsOnSentence {
 						System.out.println("=> " + input);
 
 						System.out.println("longest string in a sentence: ");
-						GetLongestWord(input);
-						GetLongestWordJava8(input);
+						GetLongestWord(input);                                // variant 1
+						GetLongestWordJava8(input);                           // variant 2
 
 						System.out.println("\nReverse words a sentence: ");
-						reverseFullChar(input);
-						reverseFullIterat(input);
-						reverseFullStringBuffer(input);
+						reverseFullChar(input);                               // variant 1
+						reverseFullIterat(input);                             // variant 2
+						reverseFullStringBuffer(input);                       // variant 3
 				  }
 			} catch (IOException e) {
 				  e.printStackTrace();

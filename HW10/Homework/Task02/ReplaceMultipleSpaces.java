@@ -16,17 +16,17 @@ public class ReplaceMultipleSpaces {
 			String input;
 			try {
 				  while ((input = br.readLine()) != null) {
-
+                                                                                   // variant 1
 				  String var1 = input.trim().replaceAll("\\s+", " ");
 				  System.out.print("\nUsing regular expression: ");				  
 				  System.out.print("=>" + var1 + ".");
-
+                                                                                   // variant 2
 				  String regex = "\\s+(?![^\\s+$])";
 				  Pattern pattern = Pattern.compile(regex);
 				  Matcher matcher = pattern.matcher(input);
-				  String var3 = matcher.replaceAll("");
+				  String var2 = matcher.replaceAll("");
 				  System.out.print("\nUsing the java.util.regex package: ");
-				  System.out.print("=>" + var3 + ".");
+				  System.out.print("=>" + var2 + ".");
 				  }
 
 			} catch (IOException e) {
