@@ -16,7 +16,7 @@ N|Name| HW1 | HW2. Classes|HW3. If...|HW4. Loops|HW5. OOP1 |HW6. OOP2 |HW7. Inne
 11|TaylorNight|+||||||||||||
 12|SSovile|+|+|+||||||||||
 13|Garastor|+|+|+|+|+|+|+|+|+|+|||
-14|Vulook|+|+|+|+|+|+|+|+|||||
+14|Vulook|+|+|+|+|+|+|+|+|+|.|||
 15|Dzhalal|+|+|+|+|+|+|+|+|+|+|||
 16|KaterynaE|+|+|||||||||||
 17|Ruslan|||||||||||||
