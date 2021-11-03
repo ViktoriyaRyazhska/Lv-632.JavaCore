@@ -19,8 +19,7 @@ public class task2 {
 				parts.add(number);
 			}
 		}
-		System.out
-				.println("The number " + userNumber + " is the composition of the multiplication of numbers " + parts);
+		System.out.println("The number " + userNumber + " is the composition of the multiplication of numbers " + parts);
 	}
 
 }

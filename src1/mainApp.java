@@ -6,21 +6,28 @@ public class mainApp {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Enter tne number of task: ");
-		int task=Integer.parseInt(br.readLine());
-		switch(task) {
-		case 1:
-//		task1.execute1();
-			break;
-		case 2:
-			task2.execute2();
-			break;
+		BufferedReader tr = new BufferedReader(new InputStreamReader(System.in));
+		String task = "";
+		String t = "";
+		do {
+			System.out.println("Enter tne number of task: ");
+			task = tr.readLine();
+			switch (task) {
+			case "1":
+				Task01.execute1();
+				break;
+			case "2":
+				task2.execute2();
+				break;
+			case "4":
+				Task04.execute4();
+			case "end":
+				t = "end";
+				System.out.println("Programe close.");
+				break;
 			default:
-				System.out.println("Wrong number");
-		}
-
-
+				System.out.println("Wrong number.");
+			}
+		} while (t != "end");
 	}
-
 }

@@ -3,32 +3,30 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Task04 {
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-	  public static final char[] louds = { 'a', 'e', 'i', 'o', 'u', 'y' };
+	public static void execute4() {
+		final char[] louds = { 'a', 'e', 'i', 'o', 'u', 'y' };
+		String str = null;
+		int counter = 0;
+		System.out.print("Enter a long word: ");
 
-	  public static void main(String[] args) {
+		try {
+			str = br.readLine().toLowerCase();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
-			String str = null;
-			int counter = 0;
-			System.out.print("Enter a long word: ");
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		char[] charArray = str.toCharArray();
 
-			try {
-				  str = br.readLine().toLowerCase();
-			} catch (IOException e) {
-				  e.printStackTrace();
+		for (char let1 : charArray) {
+			for (char let2 : louds) {
+				if (let1 == let2) {
+					counter++;
+				}
 			}
+		}
+		System.out.println("Calculate number of loud letters: " + counter);
 
-			char[] charArray = str.toCharArray();
-
-			for (char let1 : charArray) {
-				  for (char let2 : louds) {
-						if (let1 == let2) {
-							  counter++;
-						}
-				  }
-			}
-			System.out.println("Calculate number of loud letters: " + counter);
-
-	  }
+	}
 }
