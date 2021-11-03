@@ -10,7 +10,7 @@ public class mainApp {
 		String task = "";
 		String t = "";
 		do {
-			System.out.println("Enter tne number of task: ");
+			System.out.print("\nEnter tne number of task: ");
 			task = tr.readLine();
 			switch (task) {
 			case "1":
