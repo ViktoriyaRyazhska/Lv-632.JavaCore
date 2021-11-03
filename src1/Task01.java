@@ -13,7 +13,8 @@ public class Task01 {
 			int c = 1;
 
 			BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));
-			System.out.print("Please enter length:: ");
+			
+			System.out.print("Please enter length: ");
 			try {
 				  n = Integer.parseInt(br.readLine());
 			} catch (NumberFormatException | IOException e) {
