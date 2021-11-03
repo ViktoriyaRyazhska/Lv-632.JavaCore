@@ -1,7 +1,9 @@
 package lesson15.team.utils;
 
+import lesson15.team.task6.Task6;
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class MenuTask {
@@ -29,6 +31,12 @@ public class MenuTask {
                     break;
                 case task6:
                     System.out.println("Task6 start !!!");
+                    Task6 task6 = new Task6();
+                    try {
+                        task6.getTask6();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case task7:
                     System.out.println("Task7 start !!!");
