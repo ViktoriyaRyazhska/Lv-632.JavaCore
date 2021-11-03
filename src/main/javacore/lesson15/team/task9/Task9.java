@@ -1,28 +1,25 @@
 package lesson15.team.task9;
 
-import java.util.Random;
-import java.util.stream.Stream;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class Task9 {
-    public void getTask9(){
 
-
+    public void getTask9(BufferedReader reader) throws IOException {
+        System.out.println("Enter number 'n' ?: ");
+        int n = Integer.parseInt(reader.readLine());
+        int result = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.println(takeTrueOrFalse());
+            if (takeTrueOrFalse() > 0) {
+                result++;
+            }
+        }
+        System.out.println("Count number '1' = " + result);
     }
 
-//    public int takeCountNumber(int n){
-////        int result = 0;
-////        System.out.println("Enter number 'n' ?: ");
-////
-////        for (int i = 0; i < n; i++) {
-////            if (takeTrueOrFalse() != 1 ){
-////                result++;
-////            }
-////        }
-////        return result;
-//    }
-
-    public Stream<Integer> takeTrueOrFalse(){
-        Random random = new Random();
-        return random.ints(0,1).boxed();
+    public int takeTrueOrFalse() {
+        int res = (int) ( Math.random() * 2 );
+        return res;
     }
 }

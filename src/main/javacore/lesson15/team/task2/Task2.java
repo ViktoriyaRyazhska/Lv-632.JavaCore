@@ -1,15 +1,11 @@
-package main.javacore.lesson15.team.task2;
+package lesson15.team.task2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Task2 {
-    public static void main(String[] args) throws IOException {
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    public void getTask2(BufferedReader reader) throws IOException {
         System.out.println("Enter number");
-
         int input = Integer.parseInt(reader.readLine());
         double sqrt = Math.sqrt(input);
 
@@ -25,10 +21,8 @@ public class Task2 {
                 multiplier += 2;
             }
         }
-
         if (input != 1) {
             System.out.print(input);
         }
     }
 }
-

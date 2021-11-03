@@ -2,13 +2,11 @@ package lesson15.team.Task1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Task1 {
 
-    public void getTask1() {
+    public void getTask1(BufferedReader reader) {
         System.out.println("Enter a number: ");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int n = 0;
         try {
             n = Integer.parseInt(reader.readLine());

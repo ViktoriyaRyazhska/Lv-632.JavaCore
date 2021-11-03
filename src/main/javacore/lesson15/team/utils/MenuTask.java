@@ -2,15 +2,20 @@ package lesson15.team.utils;
 
 import lesson15.team.Task1.Task1;
 import lesson15.team.Task7.Task7;
+import lesson15.team.Task8.Task8;
+import lesson15.team.task2.Task2;
 import lesson15.team.task6.Task6;
+
+import lesson15.team.task9.Task9;
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class MenuTask {
 
-    public void getTask() {
+    public void getTask(BufferedReader reader) {
         String text = "";
 
         do {
@@ -19,11 +24,17 @@ public class MenuTask {
                 case task1:
                     System.out.println("Task1 start !!!");
                     Task1 task1 = new Task1();
-                    task1.getTask1();
+                    task1.getTask1(reader);
                     System.out.println("Finish task1 !!!");
                     break;
                 case task2:
                     System.out.println("Task2 start !!!");
+                    Task2 task2 = new Task2();
+                    try {
+                        task2.getTask2(reader);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case task3:
                     System.out.println("Task3 start !!!");
@@ -38,7 +49,7 @@ public class MenuTask {
                     System.out.println("Task6 start !!!");
                     Task6 task6 = new Task6();
                     try {
-                        task6.getTask6();
+                        task6.getTask6(reader);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -48,7 +59,7 @@ public class MenuTask {
                     System.out.println("Task7 start !!!");
                     Task7 task7 = new Task7();
                     try {
-                        task7.getTask7();
+                        task7.getTask7(reader);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -56,9 +67,23 @@ public class MenuTask {
                     break;
                 case task8:
                     System.out.println("Task8 start !!!");
+                    Task8 task8 = new Task8();
+                    try {
+                        task8.getTask8(reader);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Finish task8 !!!");
                     break;
                 case task9:
                     System.out.println("Task9 start !!!");
+                    Task9 task9 = new Task9();
+                    try {
+                        task9.getTask9(reader);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Finish task9 !!!");
                     break;
                 case task10:
                     System.out.println("Task10 start !!!");

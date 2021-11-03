@@ -6,9 +6,8 @@ import java.io.InputStreamReader;
 
 public class Task6 {
 
-    public void getTask6() throws IOException {
+    public void getTask6(BufferedReader reader) throws IOException {
         int countWords = 0;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter words with space in a one line");
         String input = reader.readLine();
 

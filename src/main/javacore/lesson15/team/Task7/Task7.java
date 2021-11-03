@@ -2,17 +2,15 @@ package lesson15.team.Task7;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Task7 {
 
-	public void getTask7() throws IOException {
+	public void getTask7(BufferedReader reader) throws IOException {
 		int fact = 1; 
 		int	num; 
 		int count;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter a number for: ");
-		num = Integer.parseInt(br.readLine());
+		num = Integer.parseInt(reader.readLine());
 		for (count = num; count > 0; count--) {
 			fact = fact * count;
 		}
