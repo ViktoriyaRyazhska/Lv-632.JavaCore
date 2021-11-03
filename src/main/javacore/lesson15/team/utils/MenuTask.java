@@ -1,5 +1,7 @@
 package lesson15.team.utils;
 
+import lesson15.team.Task1.Task1;
+import lesson15.team.Task7.Task7;
 import lesson15.team.task6.Task6;
 import org.apache.commons.lang3.StringUtils;
 
@@ -16,6 +18,9 @@ public class MenuTask {
             switch (task) {
                 case task1:
                     System.out.println("Task1 start !!!");
+                    Task1 task1 = new Task1();
+                    task1.getTask1();
+                    System.out.println("Finish task1 !!!");
                     break;
                 case task2:
                     System.out.println("Task2 start !!!");
@@ -37,9 +42,17 @@ public class MenuTask {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
+                    System.out.println("Finish task6 !!!");
                     break;
                 case task7:
                     System.out.println("Task7 start !!!");
+                    Task7 task7 = new Task7();
+                    try {
+                        task7.getTask7();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Finish task7 !!!");
                     break;
                 case task8:
                     System.out.println("Task8 start !!!");

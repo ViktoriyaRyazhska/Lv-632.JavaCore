@@ -1,12 +1,12 @@
+package lesson15.team.Task7;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Task7 {
-	
-	
-	public void run() throws IOException {
+
+	public void getTask7() throws IOException {
 		int fact = 1; 
 		int	num; 
 		int count;
