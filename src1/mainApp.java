@@ -11,11 +11,13 @@ public class mainApp {
 		int task=Integer.parseInt(br.readLine());
 		switch(task) {
 		case 1:
-		task1.execute1();
+//		task1.execute1();
 			break;
 		case 2:
 			task2.execute2();
-			
+			break;
+			default:
+				System.out.println("Wrong number");
 		}
 
 
