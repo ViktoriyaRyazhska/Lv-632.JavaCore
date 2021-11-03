@@ -87,7 +87,7 @@ public class MenuTask {
         Scanner scanner = new Scanner(System.in);
         String text = "";
         do {
-            System.out.print(input);
+            System.out.println(input);
             text = scanner.nextLine();
         } while (StringUtils.isBlank(text));
         return text;
