@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task11 {
 
-	  public static void main(String[] args) {
+	  public static void execute11() {
 
 			System.out.println("A credit card number must have between 13 and 16 digits. It must start with:\n"
 						+ "4 for Visa cards\n" + "5 for Master cards\n" + "37 for American Express cards\n"

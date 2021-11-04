@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class Task06 {
 
-	  public static void main(String args[]) {
+	  public static void execute6() {
 
 			String str = null;
 			System.out.print("Enter a long sentence: ");

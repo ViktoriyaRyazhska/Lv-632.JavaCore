@@ -1,7 +1,7 @@
 
 public class Task12 {
 
-	  public static void main(String[] args) {
+	  public static void execute12() {
 
 			int start = 1;
 			int end = 1000;

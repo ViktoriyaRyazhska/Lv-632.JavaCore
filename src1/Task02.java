@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Task02 {
 
-	  public static void main(String[] args) throws NumberFormatException, IOException {
+	  static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	  public static void execute2() throws NumberFormatException, IOException {
 			System.out.println("Enter number...");
 			int userNumber = Integer.parseInt(br.readLine());
 			List<Integer> parts = new ArrayList<Integer>();
