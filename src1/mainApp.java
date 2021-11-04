@@ -10,8 +10,9 @@ public class mainApp {
 		String task = null;
 		String t = null;
 		System.out.println("Team1 congratulates You!");
-		System.out.println("We efficiently implemented the Main () method and created a unique interface for solving problems.");
-		
+		System.out.println(
+				"We efficiently implemented the Main () method and created a unique interface for solving problems.");
+
 		do {
 			System.out.print("\nEnter tne number of task: ");
 			task = tr.readLine();
@@ -19,39 +20,43 @@ public class mainApp {
 			case "1":
 				Task01.execute1();
 				break;
-				
+
 			case "2":
 				Task02.execute2();
 				break;
-				
+
 			case "4":
 				Task04.execute4();
 				break;
-				
+
 			case "6":
-				Task06.execute6();	
+				Task06.execute6();
 				break;
 				
+			case "7":
+				Task07.execute7();
+				break;
+
 			case "10":
 				Task10.execute10();
-				break;			
-								
+				break;
+
 			case "11":
 				Task11.execute11();
 				break;
-				
+
 			case "12":
-				Task12.execute12();		
+				Task12.execute12();
 				break;
-				
+
 			case "13":
-				Task13.execute13();		
+				Task13.execute13();
 				break;
-				
+
 			case "14":
-				Task14.execute14();		
-				break;			
-				
+				Task14.execute14();
+				break;
+
 			case "end":
 				t = "end";
 				System.out.println("Programe close.");
