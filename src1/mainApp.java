@@ -44,6 +44,10 @@ public class mainApp {
 				Task13.execute13();		
 				break;
 				
+			case "14":
+					Task14.execute14();		
+					break;			
+				
 			case "end":
 				t = "end";
 				System.out.println("Programe close.");

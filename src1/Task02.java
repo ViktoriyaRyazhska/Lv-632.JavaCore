@@ -9,7 +9,7 @@ public class Task02 {
 	  static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 	  public static void execute2() throws NumberFormatException, IOException {
-			System.out.println("Enter number...");
+			System.out.println("Enter any number: ");
 			int userNumber = Integer.parseInt(br.readLine());
 			List<Integer> parts = new ArrayList<Integer>();
 			int temp = userNumber;
