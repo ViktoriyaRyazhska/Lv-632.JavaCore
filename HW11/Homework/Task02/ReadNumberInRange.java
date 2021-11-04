@@ -9,11 +9,15 @@ public class ReadNumberInRange {
 	  private static final int START = 1;
 	  private static final int END = 100;
 
-	  public static void main(String[] args) throws ArgumentOutOfRangeException {
+	  public static void main(String[] args) {
 			BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));
 			for (int i = 1; i < 11; i++) {
 
-				  isInRangeinputInt(getUserInput(br));
+				  try {
+						isInRangeinputInt(getUserInput(br));
+				  } catch (ArgumentOutOfRangeException e) {
+						System.err.println(e.getMessage());
+				  }
 			}
 	  }
 
@@ -39,14 +43,10 @@ public class ReadNumberInRange {
 	  }
 
 	  public static void isInRangeinputInt(int inputInt) throws ArgumentOutOfRangeException {
-			try {
-				  if (isInRange(inputInt, START, END)) {
-						System.out.println("Congratulations! This number is in the Range!\n");
-				  } else {
-						throw new ArgumentOutOfRangeException("The number entered is out of range.\n");
-				  }
-			} catch (ArgumentOutOfRangeException e) {
-				  System.err.println(e.getMessage());
+			if (isInRange(inputInt, START, END)) {
+				  System.out.println("Congratulations! This number is in the Range!\n");
+			} else {
+				  throw new ArgumentOutOfRangeException("The number entered is out of range.\n");
 			}
 	  }
 

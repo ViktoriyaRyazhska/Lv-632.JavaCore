@@ -8,6 +8,7 @@ public abstract class Appl {
 	  public static void main(String[] args) {
 
 			List<Plant> plants = new ArrayList<>();
+			
 			// add - ok!
 			try {
 				  plants.add(new Plant("orchid", "white", 100));
@@ -16,6 +17,7 @@ public abstract class Appl {
 			} catch (ColorException m) {
 				  System.err.println(m.getMessage() );
 			}
+			
 			// Invalid black color 
 			try {
 				  plants.add(new Plant("lotus", "black", 31));
@@ -24,6 +26,7 @@ public abstract class Appl {
 			} catch (ColorException m) {
 				  System.err.println(m.getMessage());
 			}
+			
 			// Invalid gladiolus type 
 			try {
 				  plants.add(new Plant("gladiolus", "red", 300));

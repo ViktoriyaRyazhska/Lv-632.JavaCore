@@ -7,7 +7,9 @@ import lesson011b.Rectangle.NegativeNumberException;
 
 class Rectangle {
 
-	  int a, b, area;
+	  int a;
+	  int b;
+	  int area;
 
 	  void squareRectangle(int a, int b) throws NegativeNumberException, IllegalArgumentException {
 			if (a < 0 || b < 0)

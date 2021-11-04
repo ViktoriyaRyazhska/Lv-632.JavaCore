@@ -8,7 +8,10 @@ public class ReadNumberAndDiv {
 
 	  public static void main(String[] args) {
 			BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));
-			double numerator = 0.0, denominator = 0.0, quotient = 0.0;
+			double numerator = 0.0;
+			double denominator = 0.0;
+			double quotient = 0.0;
+			
 			numerator = getUserInput(br);
 			denominator = getUserInput(br);
 			quotient = div(numerator, denominator);
@@ -21,9 +24,9 @@ public class ReadNumberAndDiv {
 	  }
 
 	  public static double getUserInput(BufferedReader br) {
-			System.out.print("Please enter number =>Double: ");
 			double innum = 0.0;
-			try {
+			System.out.print("Please enter number =>Double: ");
+						try {
 				  innum = Double.parseDouble(br.readLine());
 				  if (isDouble(innum))
 						System.out.println("Entered number =>DOUBLE: " + innum + "\n");
