@@ -7,9 +7,8 @@ import java.io.InputStreamReader;
 import java.util.regex.Pattern;
 
 public class Task4 {
-    public void getTask4(BufferedReader taskName) throws IOException {
+    public void getTask4(BufferedReader reader) throws IOException {
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Finding number of loud letters.\nInput text: ");
 
         char[] symbols = reader.readLine().toCharArray();
