@@ -4,6 +4,7 @@ import main.javacore.lesson15.team.Task1.Task1;
 import main.javacore.lesson15.team.Task7.Task7;
 import main.javacore.lesson15.team.Task8.Task8;
 import main.javacore.lesson15.team.task2.Task2;
+import main.javacore.lesson15.team.task4.Task4;
 import main.javacore.lesson15.team.task6.Task6;
 
 import main.javacore.lesson15.team.task9.Task9;
@@ -41,6 +42,12 @@ public class MenuTask {
                     break;
                 case task4:
                     System.out.println("Task4 start !!!");
+                    Task4 task4 = new Task4();
+                    try {
+                        task4.getTask4(reader);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case task5:
                     System.out.println("Task5 start !!!");
