@@ -1,5 +1,6 @@
 package main.javacore.lesson15.team.task4;
 //4.	Input string and calculate number of loud letters (e.g. word: “My test text”, result: 3)
+//      Created by Taras Chornyi
 
 import java.io.BufferedReader;
 import java.io.IOException;
