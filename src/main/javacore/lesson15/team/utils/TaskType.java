@@ -1,4 +1,4 @@
-package lesson15.team.utils;
+package main.javacore.lesson15.team.utils;
 
 public enum TaskType {
     task1("Name task1 description"),

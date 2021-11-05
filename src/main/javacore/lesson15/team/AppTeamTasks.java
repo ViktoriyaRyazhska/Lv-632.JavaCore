@@ -1,6 +1,6 @@
-package lesson15.team;
+package main.javacore.lesson15.team;
 
-import lesson15.team.utils.MenuTask;
+import main.javacore.lesson15.team.utils.MenuTask;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

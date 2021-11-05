@@ -1,4 +1,4 @@
-package lesson15.team.task2;
+package main.javacore.lesson15.team.task2;
 
 import java.io.BufferedReader;
 import java.io.IOException;

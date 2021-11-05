@@ -1,12 +1,12 @@
-package lesson15.team.utils;
+package main.javacore.lesson15.team.utils;
 
-import lesson15.team.Task1.Task1;
-import lesson15.team.Task7.Task7;
-import lesson15.team.Task8.Task8;
-import lesson15.team.task2.Task2;
-import lesson15.team.task6.Task6;
+import main.javacore.lesson15.team.Task1.Task1;
+import main.javacore.lesson15.team.Task7.Task7;
+import main.javacore.lesson15.team.Task8.Task8;
+import main.javacore.lesson15.team.task2.Task2;
+import main.javacore.lesson15.team.task6.Task6;
 
-import lesson15.team.task9.Task9;
+import main.javacore.lesson15.team.task9.Task9;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedReader;
