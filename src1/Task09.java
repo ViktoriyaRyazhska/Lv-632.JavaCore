@@ -5,14 +5,14 @@ import java.util.Random;
 
 public class Task09 {
 
-	  public static void main(String[] args) {
+	  public static void execute9() {
 
 			int rand_int = 0;
 			int n = 0;
 			int countR = 0;
 			Random rand = new Random();
 			BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));
-			System.out.print("Enter RANDOM number: ");
+			System.out.print("Random number generator and counter. Please enter the number of repetitions: ");
 
 			try {
 				  n = Integer.parseInt(br.readLine());
