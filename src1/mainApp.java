@@ -37,6 +37,10 @@ public class mainApp {
 				Task07.execute7();
 				break;
 
+			case "9":
+				Task09.execute9();
+				break;
+			
 			case "10":
 				Task10.execute10();
 				break;
