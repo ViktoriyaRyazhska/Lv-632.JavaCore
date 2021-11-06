@@ -27,6 +27,7 @@ public class Task07 {
 			System.out.print(parts.get(a) + "*");
 		}
 		System.out.print("=" + " " + temp);
+		
 	}
 
 }
