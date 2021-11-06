@@ -28,13 +28,18 @@ public class mainApp {
 			case "4":
 				Task04.execute4();
 				break;
-
+			case "5":
+				Task05.execue5();
+				break;
 			case "6":
 				Task06.execute6();
 				break;
 				
 			case "7":
 				Task07.execute7();
+				break;
+			case "8":
+				Task08.execute8();
 				break;
 
 			case "9":
