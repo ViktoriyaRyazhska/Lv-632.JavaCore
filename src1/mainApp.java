@@ -24,7 +24,9 @@ public class mainApp {
 			case "2":
 				Task02.execute2();
 				break;
-
+			case "3":
+				Task03.execute3();
+				break;
 			case "4":
 				Task04.execute4();
 				break;

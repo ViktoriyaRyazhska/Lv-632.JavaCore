@@ -37,7 +37,7 @@ public class Task08 {
 		int integer = a / 100;
 		int rest = a % 100;
 		String result = "";
-		if (integer >= 20) {
+		if (integer>= 1) {
 			result = ones(integer) + " hundred ";
 		}
 		if (rest < 20) {
