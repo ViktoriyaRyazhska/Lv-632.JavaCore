@@ -18,7 +18,7 @@ public class OperationTable {
                 "create table cars\n" +
                 "        (\n" +
                 "                id serial primary key not null,\n" +
-                "                model character(155),\n" +
+                "                model character(15),\n" +
                 "                year_of_production int\n" +
                 "        );";
 
