@@ -1,14 +1,35 @@
 package Task3;
 
-public class Main{
+public class Main {
+
     public static void main(String[] args) {
+        Thread thread3 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                printMessage(5, "Thread 3");
+            }
+        });
+        Thread thread2 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                printMessage(3, "Thread 2");
+                thread3.start();
+            }
+        });
+        Thread thread1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                thread2.start();
+            }
+        });
 
-        SomeThread two;
-        SomeThread three;
+        thread1.start();
+    }
 
-        SomeThread one = new SomeThread(0, "",
-                   two = new SomeThread(3,"Thread number two",
-                   three = new SomeThread(5,"Thread number three")));
+    private static void printMessage(int number, String message) {
+        for (int i = 0; i < number; i++) {
+            System.out.println(message);
+        }
     }
 }
 
