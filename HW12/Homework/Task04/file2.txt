@@ -1,0 +1,4 @@
+Name: Andriy Vulook
+Born: the 29th of April, 1980
+Total number of symbols in file1.txt is: 1035
+MAX length line in file1.txt is:  At my current job in the finance department of a midsize company, I handle scheduling, meeting and travel planning for four executives and 20 staff members
