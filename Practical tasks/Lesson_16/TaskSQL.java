@@ -78,7 +78,7 @@ public class TaskSQL {
         prepareStatement.setString(2, model);
         prepareStatement.setInt(3, year);
         prepareStatement.executeUpdate();
-        System.out.println("new car "+brand+" "+model+" added successful");
+        System.out.printf("new car %s %s added successful\n", brand, model);
     }
 
     private static List<Car> getListOfCars () throws SQLException {
